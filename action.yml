@@ -32,7 +32,11 @@ runs:
   using: composite
   steps:
     - uses: pnpm/action-setup@v4
+      env:
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     - uses: actions/setup-node@v5
+      env:
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       with:
         node-version: 22
         cache: pnpm
