@@ -1,0 +1,17 @@
+name: Maintainer feedback
+description: Share feedback from trying TriagePilot
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Public repo where you tried TriagePilot.
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What was useful or noisy?
+    validations:
+      required: true

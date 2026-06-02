@@ -1,0 +1,13 @@
+diff --git a/triagepilot.yml b/triagepilot.yml
+index 1111111..2222222 100644
+--- a/triagepilot.yml
++++ b/triagepilot.yml
+@@ -1,0 +2,2 @@
++safety:
++  max_input_chars: 6000
+diff --git a/package.json b/package.json
+index 1111111..2222222 100644
+--- a/package.json
++++ b/package.json
+@@ -1,0 +2,1 @@
++{"version":"0.1.1"}

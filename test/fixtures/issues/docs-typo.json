@@ -1,0 +1,6 @@
+{
+  "number": 3,
+  "title": "Docs typo in the quickstart",
+  "body": "Affected page: README.md\nSuggested change: The quickstart says pnpm triagepilot, but the command should use pnpm exec triagepilot.",
+  "labels": []
+}

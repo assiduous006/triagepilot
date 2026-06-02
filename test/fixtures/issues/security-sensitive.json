@@ -1,0 +1,6 @@
+{
+  "number": 4,
+  "title": "Possible token leak in workflow logs",
+  "body": "I found a security issue where a secret token may be printed in logs. I can share the exploit privately.",
+  "labels": []
+}

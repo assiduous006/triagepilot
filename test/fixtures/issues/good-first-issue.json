@@ -1,0 +1,6 @@
+{
+  "number": 7,
+  "title": "Docs: add a small good first issue example",
+  "body": "Affected page: docs/demo.md\nSuggested change: Add a tiny fixture example. This is a good first issue for a new contributor.",
+  "labels": []
+}

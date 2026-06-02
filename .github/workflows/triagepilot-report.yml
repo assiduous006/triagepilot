@@ -1,0 +1,38 @@
+name: TriagePilot report-only
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [issue, pr]
+        default: pr
+      issue_fixture:
+        description: Issue fixture path for issue mode.
+        required: false
+        default: test/fixtures/issues/missing-repro.json
+
+jobs:
+  triagepilot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - name: Issue report
+        if: ${{ inputs.mode == 'issue' }}
+        run: node dist/cli.js issue --input "${{ inputs.issue_fixture }}" --config triagepilot.yml --format markdown >> "$GITHUB_STEP_SUMMARY"
+      - name: PR report
+        if: ${{ inputs.mode == 'pr' }}
+        run: node dist/cli.js pr --base origin/main --head HEAD --config triagepilot.yml --format markdown >> "$GITHUB_STEP_SUMMARY"

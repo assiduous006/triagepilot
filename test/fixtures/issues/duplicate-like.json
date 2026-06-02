@@ -1,0 +1,6 @@
+{
+  "number": 5,
+  "title": "This looks like a duplicate of the install failure",
+  "body": "Version: 0.1.x\nOperating system: macOS\nReproduction steps: pnpm install and run the CLI.\nExpected behavior: Install succeeds.\nActual behavior: Same failure as issue #12.\nLogs or screenshots: ERR_PNPM_LOCKFILE",
+  "labels": []
+}

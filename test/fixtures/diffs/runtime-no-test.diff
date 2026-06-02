@@ -1,0 +1,9 @@
+diff --git a/src/config.ts b/src/config.ts
+index 1111111..2222222 100644
+--- a/src/config.ts
++++ b/src/config.ts
+@@ -10,0 +11,4 @@ export function loadConfig(path: string) {
++export function loadConfigFromString(raw: string) {
++  return TriagePilotConfigSchema.parse(parse(raw) ?? {});
++}
++

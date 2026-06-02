@@ -1,0 +1,60 @@
+project:
+  name: TriagePilot
+  default_branch: main
+  supported_versions:
+    - "0.1.x"
+    - "main"
+
+safety:
+  dry_run: true
+  max_input_chars: 12000
+  allow_public_comments: false
+  allow_label_writes: false
+
+labels:
+  bug: [bug]
+  feature: [enhancement]
+  docs: [documentation]
+  question: [question]
+  invalid: [invalid]
+  needs_info: [needs-repro, needs-info]
+  good_first_issue: [good first issue]
+  security_sensitive: [security, needs-private-report]
+
+issue_requirements:
+  bug:
+    required_fields:
+      - version
+      - operating system
+      - reproduction steps
+      - expected behavior
+      - actual behavior
+      - logs or screenshots
+  feature:
+    required_fields:
+      - use case
+      - proposed behavior
+      - alternatives considered
+  docs:
+    required_fields:
+      - affected page
+      - suggested change
+
+pr_review:
+  public_api_patterns:
+    - "src/cli.ts"
+    - "src/schema.ts"
+    - "src/config.ts"
+    - "src/**/*.ts"
+  test_patterns:
+    - "test/**"
+    - "**/*.test.ts"
+    - "**/*.spec.ts"
+  docs_patterns:
+    - "docs/**"
+    - "README.md"
+    - "CHANGELOG.md"
+  release_note_required_patterns:
+    - "src/**"
+    - "package.json"
+    - "action.yml"

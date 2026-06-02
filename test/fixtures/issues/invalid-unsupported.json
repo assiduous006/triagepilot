@@ -1,0 +1,6 @@
+{
+  "number": 8,
+  "title": "Old version fails to run",
+  "body": "Version: 0.0.1\nOperating system: Ubuntu 20.04\nReproduction steps: Run an old pre-release binary.\nExpected behavior: It should work.\nActual behavior: It fails.\nLogs or screenshots: unsupported version error",
+  "labels": []
+}

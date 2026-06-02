@@ -1,0 +1,8 @@
+diff --git a/src/schema.ts b/src/schema.ts
+index 1111111..2222222 100644
+--- a/src/schema.ts
++++ b/src/schema.ts
+@@ -1,0 +2,3 @@
++export const NewPublicSchema = z.object({
++  name: z.string()
++});

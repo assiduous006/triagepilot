@@ -1,0 +1,6 @@
+{
+  "number": 6,
+  "title": "Bug: report command fails",
+  "body": "Version: 0.1.x\nOperating system: Ubuntu\nReproduction steps: none\nExpected behavior:\nActual behavior:\nLogs or screenshots: n/a",
+  "labels": []
+}

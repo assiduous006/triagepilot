@@ -1,0 +1,6 @@
+{
+  "number": 2,
+  "title": "Feature request: support duplicate candidate search",
+  "body": "Use case: Maintainers often see duplicate bug reports.\nProposed behavior: TriagePilot should optionally search existing issues and list likely duplicates.\nAlternatives considered: Manual GitHub search by maintainers.",
+  "labels": []
+}

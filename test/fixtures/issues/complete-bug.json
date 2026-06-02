@@ -1,0 +1,6 @@
+{
+  "number": 1,
+  "title": "CLI crashes when reading a valid issue fixture",
+  "body": "Version: 0.1.x\nOperating system: Ubuntu 24.04\nReproduction steps: Run triagepilot issue with the attached JSON fixture.\nExpected behavior: The command prints a Markdown report.\nActual behavior: The command exits with an error.\nLogs or screenshots: TypeError: Cannot read property title",
+  "labels": []
+}
