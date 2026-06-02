@@ -12,6 +12,9 @@ on:
         required: false
         default: test/fixtures/issues/missing-repro.json
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   triagepilot:
     runs-on: ubuntu-latest
